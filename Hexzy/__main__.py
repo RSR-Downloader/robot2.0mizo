@@ -63,34 +63,34 @@ from Hexzy.modules.helper_funcs.misc import paginate_modules
 from Hexzy.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [Hexzy Pro](https://telegra.ph/file/23c40c8b88da2370e9743.jpg)
+Hello there, I'm [Robot 2.0](https://telegra.ph/file/47caadaea13d54e062d1b.jpg)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+I am Group Managing Bot and I will help in managing your group
 
-✪ Make sure you read *INFO* Section Below ✪ 
+✪ Click👉 /help for more info ✪ 
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="🚸 Support Group", url="https://t.me/rsrtginfo"),
         InlineKeyboardButton(
-            text=" 🦠 Update Channel ", url="https://t.me/Mafia_Update"
+            text=" 🚸 Support Channel", url="https://t.me/Mafia_Update"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="⛑ Help & Commands ❓", url="https://t.me/HexzyBot?start=help"
+            text="🔐 Help & Support", url="https://t.me/rsr_help_bot?start=true"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support Group", url="https://t.me/Gangofmafiateam"
+            text="🔔 YouTube Channel", url="https://youtube.com/c/ArtInMirror"
         ),
-        InlineKeyboardButton(text=" ⚡️ Developer ", url="https://t.me/Prabha_sha"),
+        InlineKeyboardButton(text=" 🛠️ Developer", url="https://t.me/rsrmusic"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add Hexzy to Your Group 🎨", url="t.me/HexzyBot?startgroup=true"
+            text="➕ Add Me to Your Group 🎨", url="t.me/HexzyBot?startgroup=true"
         ),
     ],
 ]
@@ -109,11 +109,11 @@ HELP_STRINGS = f"""
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-Hexzy_IMG = "https://telegra.ph/file/23c40c8b88da2370e9743.jpg"
+RSR_IMG = "https://telegra.ph/file/47caadaea13d54e062d1b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them [Prabhasha](t.me/Prabha_sha) , [Inuka](t.me/InukaASiTH)"""
+Support them [RSR](t.me/rsrmusic) , [Channel](t.me/mizolibrary)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -373,10 +373,10 @@ def Hexzy_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Mafia Updates](https://t.me/Mafia_Update) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by @rsrmusic.* "
+            f"\n\n 🔥 Join [Channel](https://t.me/mizolibrary) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/47caadaea13d54e062d1b.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -412,7 +412,7 @@ def Hexzy_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Gang Of Mafia](https://t.me/GangOfMafiaTeam).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [RSR TG info★](https://t.me/rsrtginfo).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -492,7 +492,7 @@ def Hexzy_about_callback(update, context):
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
             f"\n✪ Always try to keep credits, so \n  This hardwork is done by Infinity_Bots team spending many sleepless nights.. So, Respect it."
-            f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
+            f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>RSR-Downloader/robot2.0mizo</b>."
             f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
