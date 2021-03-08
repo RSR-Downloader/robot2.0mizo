@@ -11,7 +11,7 @@
 <details>
   <summary>Steps to deploy on Heroku !! </summary>
  
- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RSR-Downloader/robot2.0mizo)
+ [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prabhasha-p/Hexzybot)
 
 ```
 Fill in all the details, Deploy!
